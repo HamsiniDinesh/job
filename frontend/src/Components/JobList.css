@@ -1,0 +1,115 @@
+.job-list-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.job-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 40%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+}
+
+.search-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+.job-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 28px;
+}
+
+.job-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-decoration: none;   /* remove underline */
+  color: inherit;          /* inherit normal text color */
+  display: block;          /* makes the whole card clickable */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.job-card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.experience {
+  font-weight: bold;
+  color: #333;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;   
+  align-items: center;      
+  text-align: center; 
+}
+
+.tag {
+  background-color: #e9f3ff;
+  
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.pagination button.active {
+  background-color: #007bff; /* blue background */
+  color: white;              /* visible text */
+  border: 1px solid #007bff;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
